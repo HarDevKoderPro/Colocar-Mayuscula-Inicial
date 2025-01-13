@@ -1,0 +1,25 @@
+
+/* Celulares */
+@media (max-width: 760px) {
+
+  input{
+    margin-top: 30px;
+    padding: 8px 4px;
+    font-size: 1.2em;
+  }
+
+  button{
+    color: black;
+    border: 1px solid gray;
+    padding: 8px 8px;
+    font-size: 1.2em;
+  }
+
+  span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 2em;
+  }
+}
