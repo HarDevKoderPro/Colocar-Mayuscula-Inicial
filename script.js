@@ -6,21 +6,18 @@ const botonCapitalizar = getEL("botonCapitalizar");
 const spanResultado = getEL("spanResultado");
 
 // Funcion capitalizadora
-function mayusculaInicial(texto) {
-  let textoCapitalizado = "";
-
-  // Validación para manejar texto vacío
-  if (!texto) return "";
+const mayusculaInicial = (texto) => {
 
   // Capitalizo letra inicial de cada palabra del texto
-  texto = texto.split(" ").forEach((palabra) => {
-    textoCapitalizado += `${palabra.charAt(0).toUpperCase()}${palabra
+  let resultado = "";
+  texto.split(" ").forEach((palabra) => {
+    resultado += `${palabra.charAt(0).toUpperCase()}${palabra
       .substring(1)
       .toLowerCase()} `;
   });
 
-  return textoCapitalizado;
-}
+  return resultado;
+};
 
 // Llamado de la funcion.
 botonCapitalizar.addEventListener("click", () => {
